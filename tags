@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFSIZE	common.h	11;"	d
+CLIENT_FUN_H	client.h	2;"	d
+COMMON_H	common.h	2;"	d
+DATA	user_list.h	/^struct DATA$/;"	s
+FIRST	client.c	12;"	d	file:
+ID_CMD	common.h	20;"	d
+ID_FAIL	common.h	19;"	d
+ID_HEAT	common.h	22;"	d
+ID_LOG	common.h	17;"	d
+ID_MSG	common.h	21;"	d
+ID_REG	common.h	16;"	d
+ID_SUCC	common.h	18;"	d
+ID_WEL	common.h	15;"	d
+OFFLINE	user_list.h	6;"	d
+ONLINE	user_list.h	7;"	d
+PORT	common.h	12;"	d
+Pack	common.h	/^struct Pack$/;"	s
+SECOND	client.c	13;"	d	file:
+SERVER_FUN_H	server.h	2;"	d
+SIZE	common.h	13;"	d
+THIRD	client.c	14;"	d	file:
+USER	user_list.h	/^struct USER$/;"	s
+USER_LIST_H	user_list.h	2;"	d
+apart	server.c	/^void apart(char *msg, char *name, char *passwd)$/;"	f
+check_str	client.c	/^bool check_str(char *str)$/;"	f
+client_usage	client.c	/^void client_usage(void)$/;"	f
+creat_void_list	user_list.c	/^struct USER *creat_void_list(void)$/;"	f
+data	common.h	/^	char data[BUFSIZE];$/;"	m	struct:Pack
+data	user_list.h	/^	struct DATA data;$/;"	m	struct:USER	typeref:struct:USER::DATA
+decode	common.c	/^void decode(struct Pack *pack)$/;"	f
+encode	common.c	/^void encode(struct Pack *pack, int head, const char *data)$/;"	f
+exec_cmd	server.c	/^void exec_cmd(char *cmd, char *msg, int nsock, struct Pack *pack)$/;"	f
+free_list	user_list.c	/^void free_list(struct USER *head)$/;"	f
+get_name	client.c	/^void get_name(char *name)$/;"	f
+get_passwd	client.c	/^void get_passwd(char *passwd)$/;"	f
+head	common.h	/^	int head;$/;"	m	struct:Pack
+hide_passwd	client.c	/^int hide_passwd(void)$/;"	f
+insert_head	user_list.c	/^void insert_head(struct DATA data, struct USER *head)$/;"	f
+is_empty	user_list.c	/^bool is_empty(struct USER *head)$/;"	f
+load_file	user_list.c	/^void load_file(struct USER *head)$/;"	f
+log_chk	user_list.c	/^bool log_chk(struct USER *head, char *name, char *passwd)$/;"	f
+main	client.c	/^int main(int argc, char *argv[])$/;"	f
+main	server.c	/^int main(int argc, char *argv[])$/;"	f
+merge	client.c	/^void merge(char *name, char *passwd, char *msg)$/;"	f
+name	user_list.h	/^	char name[SIZE];$/;"	m	struct:DATA
+next	user_list.h	/^	struct USER *next;$/;"	m	struct:USER	typeref:struct:USER::USER
+passwd	user_list.h	/^	char passwd[SIZE];$/;"	m	struct:DATA
+proc_echo	client.c	/^void proc_echo(int sockfd)$/;"	f
+proc_echo	server.c	/^void *proc_echo(void *sock)$/;"	f
+proc_swch	client.c	/^void proc_swch(struct Pack pack, int sockfd)$/;"	f
+proc_swch	server.c	/^void proc_swch(struct Pack pack, int nsock)$/;"	f
+save_file	user_list.c	/^void save_file(struct USER *head)$/;"	f
+select_oprate	client.c	/^void select_oprate(int *num, int min, int max)$/;"	f
+server_usage	server.c	/^void server_usage(void)$/;"	f
+staus	user_list.h	/^	char staus;	\/\/1 ONLINE在线,0 OFFLINE下线$/;"	m	struct:DATA
+travers_list	user_list.c	/^void travers_list(struct USER *head)$/;"	f
+user_register	client.c	/^bool user_register(char *name, char *passwd)$/;"	f
